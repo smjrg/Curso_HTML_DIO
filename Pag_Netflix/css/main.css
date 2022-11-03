@@ -1,0 +1,113 @@
+/*Elementos base*/
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--preto);
+    color: white;
+}
+/*fim elementos base*/
+/*ELementos do menu*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: "arial black", times;
+    font-size: 40px;
+    margin-left: 1rem;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 1rem;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+/* fim elementos menu*/
+/* film principal*/
+.film-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/fundo-twd.jpg');
+
+    height: 30rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.film-principal .container{
+    margin-left: 1rem;
+    width: 70%;
+}
+
+.film-principal .container .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.film-principal .container .title{
+    margin-top: 5%;
+    font-size: 4rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.film-principal .container .botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 20px;
+    margin-right: 1rem;
+    font-size: 12px; 
+ 
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.film-principal .container .botao:hover{
+    background-color: white;
+    color: black;   
+}
+
+.film-principal .container .botao i{
+    margin-right: .3rem;
+}
+
+.title2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+
+}
+
+.box-film{
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin: 1rem;
+}
+
